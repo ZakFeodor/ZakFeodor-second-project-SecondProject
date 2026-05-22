@@ -8,7 +8,7 @@ class ConsoleUI:
     """Класс для работы с пользователем через консоль"""
 
     def __init__(self, crm_system: CrmSystem) -> None:
-        """Инициализация менюшки
+        """Инициализация меню
 
         Args:
             crm_system (CrmSystem): главная система к которой будем обращаться
@@ -23,7 +23,7 @@ class ConsoleUI:
         self.crm = crm_system
 
     def start(self) -> None:
-        """Главный цикл программы который крутится пока не выйдем"""
+        """Главный цикл программы"""
 
         while True:
             print("\n=== Главное меню CRM ===")
@@ -77,7 +77,7 @@ class ConsoleUI:
         """Метод чтобы создать клиента"""
 
         try:
-            cust_id = int(input("Введите айдишник клиента: "))
+            cust_id = int(input("Введите айди клиента: "))
             name = input("Введите имя клиента: ")
             phone = input("Введите телефон: ")
 

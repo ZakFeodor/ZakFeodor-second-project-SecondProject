@@ -5,14 +5,14 @@ from ConsoleUI import ConsoleUI
 def main() -> None:
     """Точка входа в нашу программу"""
 
-    print("Пытаемся загрузить данные из файлика...")
+    print("Пытаемся загрузить данные из файла")
 
     system = DataManager.load_data("my_company.json")
     ui = ConsoleUI(system)
 
     ui.start()
 
-    print("Сохраняем данные перед выходом...")
+    print("Сохраняем данные перед выходом")
 
     DataManager.save_data(system, "my_company.json")
 
