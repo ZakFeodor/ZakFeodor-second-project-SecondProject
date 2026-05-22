@@ -32,7 +32,10 @@ class Employee(Person):
 
     @property
     def position(self) -> str:
-        """str: Возвращает должность работника."""
+        """
+        Returns:
+            str: Возвращает должность работника.
+        """
 
         return self._position
 
@@ -58,7 +61,10 @@ class Employee(Person):
 
     @property
     def salary(self) -> float:
-        """float: Возвращает размер заработной платы."""
+        """
+        Returns:
+            float: Возвращает размер заработной платы.
+        """
 
         return self._salary
 
@@ -84,7 +90,10 @@ class Employee(Person):
 
     @property
     def assigned_facility_id(self) -> int:
-        """int: Возвращает ID объекта (склада/пункта продаж), за которым закреплен работник."""
+        """
+        Returns:
+            int: Возвращает ID объекта (склада/пункта продаж), за которым закреплен работник.
+        """
 
         return self._assigned_facility_id
 

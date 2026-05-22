@@ -16,7 +16,7 @@ def main() -> None:
 
     DataManager.save_data(system, "my_company.json")
 
-    print("Программа закрыта удачного дня")
+    print("Программа закрыта хорошего дня")
 
 
 if __name__ == "__main__":

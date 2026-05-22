@@ -11,7 +11,7 @@ class Order:
         Args:
             order_id (int): номер заказа
             order_type (str): тип операции типа покупка продажа или возврат
-            product_id (int): айдишник товара
+            product_id (int): айди товара
             quantity (int): количество товара
             total_amount (float): итоговая сумма операции
             customer_id (int, optional): айди клиента если это продажа
@@ -57,13 +57,14 @@ class Order:
         self.customer_id = customer_id
 
     def get_info(self) -> str:
-        """Возвращает чек или инфу по заказу
+        """Возвращает чек или информацию по заказу
 
         Returns:
             str: текст с данными заказа
         """
 
         client_info = f"Клиент: {self.customer_id}" if self.customer_id else "Внутренняя операция"
-        info = f"[{self.date}] Заказ {self.order_id} | Тип: {self.order_type} | Товар ID {self.product_id} | {self.quantity} шт | Сумма: {self.total_amount} | {client_info}"
+        info = f'''[{self.date}] Заказ {self.order_id}  Тип: {self.order_type}  
+        Товар ID {self.product_id}  {self.quantity} шт  Сумма: {self.total_amount}  {client_info}'''
 
         return info

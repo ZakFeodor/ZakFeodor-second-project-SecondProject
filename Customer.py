@@ -27,7 +27,10 @@ class Customer(Person):
 
     @property
     def total_spent(self) -> float:
-        """float: Возвращает общую сумму трат покупателя."""
+        """
+        Returns:
+            float: Возвращает общую сумму трат покупателя.
+        """
 
         return self._total_spent
 

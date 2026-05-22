@@ -111,7 +111,7 @@ class CrmSystem:
                 break
 
         if not target_warehouse:
-            raise ValueError("склад с таким айдишником не найден")
+            raise ValueError("склад с таким айди не найден")
 
         total_cost = target_product.purchase_price * quantity
 
@@ -228,7 +228,7 @@ class CrmSystem:
         self._next_order_id += 1
 
     def get_company_profitability(self) -> str:
-        """Считает сколько у нас сейчас денег и инфу по бюджету
+        """Считает сколько у нас сейчас денег и информацию по бюджету
 
         Returns:
             str: текст с текущим балансом

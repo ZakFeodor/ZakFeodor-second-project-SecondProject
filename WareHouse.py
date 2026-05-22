@@ -113,13 +113,13 @@ class Warehouse(Facility):
         self._next_cell_id += 1
 
     def get_inventory_info(self) -> str:
-        """Собирает информацию по всем ячейкам склада (полиморфизм)
+        """Собирает информацию по всем ячейкам склада
 
         Returns:
             str: список всех ячеек и что в них лежит
         """
 
-        lines = [f"--- Склад: {self.name} ---"]
+        lines = [f"Склад: {self.name}"]
 
         for cell in self.cells:
             if cell.product:

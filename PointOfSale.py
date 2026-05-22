@@ -73,13 +73,13 @@ class PointOfSale(Facility):
             del self.inventory[product_id]
 
     def get_inventory_info(self) -> str:
-        """Выдает список остатков товаров на точке (полиморфизм)
+        """Выдает список остатков товаров на точке
 
         Returns:
             str: текст с остатками и выручкой
         """
 
-        lines = [f"--- Точка продаж: {self.name} | Текущая выручка: {self.revenue} руб ---"]
+        lines = [f"Точка продаж: {self.name}б Текущая выручка: {self.revenue} руб "]
 
         if not self.inventory:
             lines.append("Товаров в наличии нет")

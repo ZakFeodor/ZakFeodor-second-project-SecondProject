@@ -45,14 +45,14 @@ class Facility(ABC):
         """Меняет ответственное лицо на обьекте
 
         Args:
-            new_manager_id (int): айдишник нового ответственного сотрудника
+            new_manager_id (int): айди нового ответственного сотрудника
 
         Raises:
             TypeError: если передали не число
         """
 
         if not isinstance(new_manager_id, int):
-            raise TypeError("айди нового манагера должно быть целым числом")
+            raise TypeError("айди нового менеджера должно быть целым числом")
 
         self.manager_id = new_manager_id
 

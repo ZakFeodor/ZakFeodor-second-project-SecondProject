@@ -16,7 +16,7 @@ class Product:
         """
 
         if not isinstance(product_id, int):
-            raise TypeError("айдишник товара должен быть целым числом")
+            raise TypeError("айди товара должен быть целым числом")
 
         if not isinstance(name, str):
             raise TypeError("название должно быть обычным текстом")
@@ -42,12 +42,12 @@ class Product:
         self.retail_price = float(retail_price)
 
     def get_info(self) -> str:
-        """Метод чтобы получить инфу по товару
+        """Метод чтобы получить информацию по товару
 
         Returns:
             str: готовая строка с данными товара
         """
 
-        info = f"[Товар ID: {self.product_id}] {self.name} | Закупка: {self.purchase_price} | Розница: {self.retail_price}"
+        info = f"[Товар ID: {self.product_id}] {self.name}, закупка: {self.purchase_price}, розница: {self.retail_price}"
 
         return info

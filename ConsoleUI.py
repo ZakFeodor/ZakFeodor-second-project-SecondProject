@@ -102,4 +102,4 @@ class ConsoleUI:
             print("товар добавлен в каталог можно закупать")
 
         except ValueError as e:
-            print(f"косяк с данными: {e}")
+            print(f"Ошибка при работе с данными: {e}")

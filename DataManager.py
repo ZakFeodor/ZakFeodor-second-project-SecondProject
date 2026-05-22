@@ -61,13 +61,12 @@ class DataManager:
             }
             data_to_save["catalog"].append(prod_dict)
 
-        # Записываем этот большой словарь в файл
         with open(filename, 'w', encoding='utf-8') as file:
             json.dump(data_to_save, file, indent=4, ensure_ascii=False)
 
     @staticmethod
     def load_data(filename: str = "crm_data.json") -> CrmSystem:
-        """Загружает данные из JSON и собирает из них питоновские классы
+        """Загружает данные из JSON и собирает из них классы
 
         Args:
             filename (str, optional): откуда грузим
